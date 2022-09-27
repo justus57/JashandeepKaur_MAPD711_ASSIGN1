@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#002B80"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Your Name:" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Your Name:"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:textColor="#002B80"
+        android:layout_alignStart="@+id/textViewname"
+        android:layout_alignLeft="@+id/textViewname"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:text="Your Address" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginTop="19dp"
+
+        android:ems="10"
+        android:hint="Type your Address"
+        />
+
+    <TextView
+        android:id="@+id/textViewproffession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignStart="@+id/textViewaddress"
+        android:layout_alignLeft="@+id/textViewaddress"
+        android:layout_marginTop="25dp"
+        android:textColor="#002B80"
+        android:ems="10"
+        android:text="Your Proffession:" />
+
+    <EditText
+        android:id="@+id/proffession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignStart="@+id/address"
+        android:layout_alignLeft="@+id/address"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="Past Or Current Job"
+    />
+
+    <TextView
+        android:id="@+id/textViewdream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#002B80"
+        android:layout_below="@+id/textViewproffession"
+        android:layout_alignStart="@+id/textViewproffession"
+        android:layout_alignLeft="@+id/textViewproffession"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:text="Your DreamJob:" />
+
+    <EditText
+        android:id="@+id/dreamjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proffession"
+        android:layout_alignStart="@+id/proffession"
+        android:layout_alignLeft="@+id/proffession"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Type Here"
+         />
+
+    <TextView
+        android:id="@+id/favorfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewdream"
+        android:textColor="#002B80"
+        android:layout_alignStart="@+id/textViewdream"
+        android:layout_alignLeft="@+id/textViewdream"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:text="Your Favorite Food:" />
+
+    <EditText
+        android:id="@+id/favoritefood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dreamjob"
+        android:layout_alignStart="@+id/dreamjob"
+        android:layout_alignLeft="@+id/dreamjob"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Type Here"
+         />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favoritefood"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="62dp"
+        android:text="submit"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
